@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ariel Erlintang</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<style>
+    .bgimage
+    {
+      height: 100vh;
+      background: url('images/heroImage.jpeg');
+      background-size: cover;
+      position: relative;
+    }
+    .hero_title{
+      font-size: 4.5rem;
+    }
+    .hero_desc
+    {
+      font-size: 2rem;
+    }
+    .hero_text
+    {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .imageAboutPage
+    {
+      width: 100%;
+    }
+    .servicesText .card
+    {
+      height: 280px;
+      cursor: pointer;
+    }
+    .servicesIcon
+    {
+      font-size: 36px;
+      text-align: center;
+      width: 100%;
+    }
+    .card-title
+    {
+      text-align: center;
+    }
+    .card:hover .servicesIcon
+    {
+      color: #008000;
+    }
+    .servicesText:hover{
+      border: 1px solid #008000;
+    }
+    .navbarScroll.navbarDark
+    {
+      background-color: black;
+    }
+    .social-icon
+    {
+      font-size: 36px;
+      cursor: pointer;
+    }
+    .fab 
+    {
+      color: black;
+    }
+    #footer
+    {
+      background: #808080;
+      text-align: center;
+
+    }
+    #about, #services, #portofolio, #contact
+    {
+      margin-top: 4rem;
+      padding-top: 4rem;
+    }
+    #contact
+    {
+      padding-bottom: 4rem;
+    }
+
+    .card-main
+    {
+         background-color: white;
+         transition: 0.5s;
+    }
+    .card-main:hover
+    {
+         box-shadow: #808080;
+         box-shadow: 22px 24px 0px -8px rgba(0,0,0,0.17);
+-webkit-box-shadow: 22px 24px 0px -8px rgba(0,0,0,0.17);
+-moz-box-shadow: 22px 24px 0px -8px rgba(0,0,0,0.17);
+    }
+</style>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top navbarScroll">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Ariel
+                        Erlintang</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <!-- Header text content-->
+                        <div class="text-center text-xxl-start">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                <div class="text-uppercase">FrontEnd &middot; Developer &middot; Marketing</div>
+                            </div>
+                            <div class="fs-3 fw-light text-muted">I can help your Design Website to</div>
+                            <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Get online and
+                                    build fast</span></h1>
+                            <div
+                                class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder"
+                                    href="#contact">Contact</a>
+                                <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder"
+                                    href="#portofolio">Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-7" id="home">
+
+                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                            <div class="profile bg-gradient-primary-to-secondary">
+                             
+                                
+                                <div style="margin-top: -600px;">
+                                    <img class="profile-img" style="height: 300px;" src="assets/me.jpg" alt="..." />
+                                </div>
+                                <div class="dots-1">
+                                    <!-- SVG Dots-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                                        xml:space="preserve">
+                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                            <path
+                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <!-- END of SVG dots-->
+                                </div>
+                                <div class="dots-2">
+                                    <!-- SVG Dots-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                                        xml:space="preserve">
+                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                            <path
+                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <!-- END of SVG dots-->
+                                </div>
+                                <div class="dots-3">
+                                    <!-- SVG Dots-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                                        xml:space="preserve">
+                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                            <path
+                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <!-- END of SVG dots-->
+                                </div>
+                                <div class="dots-4">
+                                    <!-- SVG Dots-->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 191.6 1215.4" style="enable-background: new 0 0 191.6 1215.4"
+                                        xml:space="preserve">
+                                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)">
+                                            <path
+                                                d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,12801.6,289.7,12808.6,227.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,11521.6,289.7,11528.6,227.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262        C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,10241.6,289.7,10248.6,227.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,8961.6,289.7,8968.6,227.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,7681.6,289.7,7688.6,227.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,6401.6,289.7,6408.6,227.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,5121.6,289.7,5128.6,227.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,3841.6,289.7,3848.6,227.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,2561.6,289.7,2568.6,227.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z">
+                                            </path>
+                                            <path
+                                                d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C383.7,1281.6,289.7,1288.6,227.7,1268.6z">
+                                            </path>
+                                            <path
+                                                d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262        C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <!-- END of SVG dots-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About Section-->
+        <section class="bg-light py-5" id="about">
+            <div class="container px-5 py-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xxl-8">
+                        <div class="text-center my-5">
+                            <h2 class="display-5 fw-bolder py-5"><span class="text-gradient d-inline">About Me</span></h2>
+                            <p class="lead fw-light mb-4">My name is ariel erlintang i come from Yogyakarta, Indonesia
+                                Developer.</p>
+                            <p class="text-muted"> i am a Trainer at CV Teamtrainit, i master native Php, code igniter 3
+                                and Laravel 10</p>
+                            <div class="d-flex justify-content-center fs-2 gap-4">
+                                <a class="text-gradient" href="https://www.instagram.com/arielerlintang/?hl=id"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a class="text-gradient"
+                                    href="https://www.linkedin.com/in/ariel-erlintang-35569325b/"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a class="text-gradient" href="https://github.com/arielerlintang"><i
+                                        class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="services" class="py-5 my-5">
+        <div class="container">
+            <h2 class="display-5 fw-bolder text-center py-5"><span class="text-gradient d-inline">Services</span></h2>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <p class="text-center">
+
+                                <a class="bi bi-buildings text-gradient display-2" aria-hidden="true"></a>
+                            </p>
+                            <h4 class="card-title mt-3">Company Profile</h4>
+                            <p class="card-text mt-3">My company profile can make you a website design for your business using the latest and coolest UI and UX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <p class="text-center">
+
+                                <a class="bi bi-mortarboard-fill text-gradient display-2" aria-hidden="true"></a>
+                            </p>
+                            <h4 class="card-title mt-3">School Academic System</h4>
+                            <p class="card-text mt-3">I can make a school academic system based on your input features by using the laravel framework or code igniter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <p class="text-center">
+                                <a class="bi bi-bag-heart-fill text-gradient display-2 text-center" aria-hidden="true"></a>
+    
+                            </p>
+                            <h4 class="card-title mt-3">online store websites</h4>
+                            <p class="card-text mt-3">I can create an online store website based on a request from you and can make your business more advanced</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- portofolio -->
+    <section id="portofolio" class="bg-light py-5">
+        <div class="container mt-3">
+            <h2 class="display-5 fw-bolder text-center"><span class="text-gradient d-inline">Portofolio</span></h2>
+            
+          <div class="row py-5">
+            <div class="col-lg-4 mt-4">
+              <div class="card card-main">
+                <img src="assets/portofolio/por-1.png" class="card-img-top" style="width: 100%;">
+                <div class="card-body">
+                  <h4 class="card-title">The school's academic system</h4>
+                  <p class="card-text">the school's academic system at SMK Bopkri 2 Yogyakarta, the system that I created is teacher monitoring which is made for the benefit of evaluating teacher promotions</p>
+                  <div class="text-center">
+                    <a href="" class="btn btn-primary">Link</a>
+                  </div>
+                  
+                </div>
+              </div>
+    
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card card-main">
+                <img src="assets/portofolio/por-2.png" class="card-img-top" style="width: 100%;">
+                <div class="card-body">
+                  <h4 class="card-title">Car Rental Company Website</h4>
+                  <p class="card-text">car rental company website used to create a car rental website at car shop outlets in Sewon, Bantul, in which there is a company profile and several features such as ordering with a driver or not, and there is also a booking booking feature and there are several people who can be on it one time</p>
+                  <div class="text-center">
+                    <a href="" class="btn btn-primary">Link</a>
+                  </div>
+                  
+                </div>
+              </div>
+    
+            </div>
+            <div class="col-lg-4 mt-4">
+              <div class="card card-main">
+                <img src="assets/portofolio/por-3.png" class="card-img-top" style="width: 100%;">
+                <div class="card-body">
+                  <h4 class="card-title">Quiz Aps</h4>
+                  <p class="card-text">a simple game application that I made for personal use and for me this is the coolest application I've ever made while I was a beginner just learning three months in the future I hope this application can be further developed besides me so I can have fun playing</p>
+                  <div class="text-center">
+                    <a href="" class="btn btn-primary">Link</a>
+                  </div>
+                  
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- endportofolio -->
+
+    <!-- contact  -->
+    <section id="contact" class="py-5">
+        <div class="container mt-3 contactContent">
+            <h2 class="display-5 fw-bolder text-center py-5"><span class="text-gradient d-inline">Contact Me</span></h2>
+      
+            <div class="row mt-4">
+              <div class="col-lg-6">
+                <div style="max-width: 100%; overflow: hidden; color: red; width: 500px; height: 500px;">
+                  <div id="embedmap-canvas" style="height: 100%; width: 100%; max-width: 100%;">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6553.445788318417!2d110.46004873432692!3d-7.74944233933209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599e1fc96599%3A0x79c528dd602886ab!2sTRAINIT!5e0!3m2!1sid!2sid!4v1686831908184!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>             
+                  </div>
+                  <a href="" class="googlemaps-html"></a>
+                </div>
+              </div>
+      
+              <div class="col-lg-6">
+                <form>
+                  <input type="text" name="" class="form-control form-control-lg" placeholder="Name">
+                  <input type="email" name="" class="form-control mt-3" placeholder="Email">
+                  <input type="text" name="" class="form-control mt-3" placeholder="Subject">
+                  <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="5" id="comment" name="text" placeholder="project details"></textarea>
+                  </div>
+                  <button class="btn btn-primary mt-3">Contact Me</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <!-- end contact  -->
+
+
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; Ariel Erlintang 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="#services">Services</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#portofolio">Portofolio</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.querySelector('.navbar');
+    
+        window.onscroll = function()
+        {
+          var top = window.scrollY;
+    
+          if (top >= 100) {
+            header.classList.add('navbarDark');
+          }  
+          else{
+            header.classList.remove('navbarDark');
+          }
+        }
+      </script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
